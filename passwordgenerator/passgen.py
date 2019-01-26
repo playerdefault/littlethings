@@ -1,4 +1,4 @@
-import json, random
+import json, random, click
 
 with open('words.json') as json_data:
     words = json.load(json_data)
