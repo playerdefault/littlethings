@@ -6,4 +6,5 @@ Randomly takes list of words from an input dictionary file and creates a long ra
 
  - click
 
-
+## Additional parameters:
+ - complex
