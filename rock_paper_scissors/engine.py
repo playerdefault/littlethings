@@ -9,30 +9,30 @@ def randomizer():
     return random.randint(0,2)
 
 def main(input):
-    output = randomizer()
+    computer_choice = randomizer()
 
-    if (output == 0):
+    if (computer_choice == 0):
         print("The computer chose Rock!")
-    elif (output == 1):
+    elif (computer_choice == 1):
         print("The computer chose Paper!")
     else:
         print("The computer chose Scissors!")
 
     ## Return True if the human won, False if computer won, None if draw
     if input == 0:
-        if output == 1:
+        if computer_choice == 1:
             return False
-        elif output == 2:
+        elif computer_choice == 2:
             return True
     elif input == 1:
-        if output == 0:
+        if computer_choice == 0:
             return True
-        elif output == 2:
+        elif computer_choice == 2:
             return False
     elif input == 2:
-        if output == 0:
+        if computer_choice == 0:
             return False
-        elif output == 1:
+        elif computer_choice == 1:
             return True
-    elif input == output:
+    elif input == computer_choice:
         return None

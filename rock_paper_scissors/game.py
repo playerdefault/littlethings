@@ -31,12 +31,19 @@ print(r"""
 
         """)
 
-user_input = input("Rock(0), Paper(1), Scissor(2)?: ")
-if (int(user_input) in [0,1,2]) == False:
+user_choice = input("Rock(0), Paper(1), Scissors(2)?: ")
+if (int(user_choice) in [0,1,2]) == False:
     print("Please enter 0 for Rock, 1 for Paper, or 2 for Scissor. The game will now exit. \n")
     exit()
 
-result = engine.main(int(user_input))
+if int(user_choice) == 0:
+    print("You chose Rock!")
+elif int(user_choice) == 1:
+    print("You chose Paper!")
+elif int(user_choice) == 2:
+    print("You chose Scissors!")
+
+result = engine.main(int(user_choice))
 
 if result == True:
     print("You win!")
