@@ -33,8 +33,12 @@ print(r"""
         """)
 
 user_choice = input("Rock(0), Paper(1), Scissors(2)?: ")
-if (int(user_choice) in [0,1,2]) == False:
-    print("Please enter 0 for Rock, 1 for Paper, or 2 for Scissor. The game will now exit. \n")
+try:
+    if (int(user_choice) in [0,1,2]) == False:
+        print("Please enter 0 for Rock, 1 for Paper, or 2 for Scissor. The game will now exit. \n")
+        exit()
+except ValueError:
+    print("Invalid input. The game will now exit. \n")
     exit()
 
 if int(user_choice) == 0:
@@ -61,5 +65,3 @@ while True:
         exit()
     else:
         print("Invalid response. Asking again.")
-
-
