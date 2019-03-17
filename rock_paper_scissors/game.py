@@ -1,4 +1,5 @@
-import engine, os
+#!/usr/bin/env python3
+import engine, os, sys
 
 if os.name == 'nt':
     os.system('cls')
@@ -51,3 +52,14 @@ elif result == False:
     print("You lose!")
 elif result == None:
     print("It's a draw!")
+
+while True:
+    game_restart = input("Another game? (Enter y or n): ")
+    if (game_restart == "y"):
+        os.execv(__file__, sys.argv) 
+    elif (game_restart == "n"):
+        exit()
+    else:
+        print("Invalid response. Asking again.")
+
+
