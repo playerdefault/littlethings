@@ -1,4 +1,4 @@
-# Console Parking Lot 
+# Automated Parking Lot 
 
 ### What and Why
 A simple console based parking lot simulation application developed as solution to a coding test.
