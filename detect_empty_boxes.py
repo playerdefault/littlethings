@@ -1,3 +1,5 @@
+# FAI TechTalk POC for Detecting Empty boxes in a PDF document
+
 from pdf2image import convert_from_path
 import cv2 as cv2
 import numpy as np
