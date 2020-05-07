@@ -1,0 +1,7 @@
+*.js
+*.ts
+subdir1
+__pycache__
+.vscode
+*.pyc
+*.swp
