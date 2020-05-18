@@ -1,0 +1,16 @@
+{
+    "name": "Outlook Web Sidebar Ad-Remover",
+    "version": "0.1",
+    "description": "Remove Outlook Web Sidebar ads",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://outlook.live.com/*"],
+            "run_at": "document_end",
+            "js": ["contentScript.js"]
+        }
+    ],
+    "manifest_version": 2
+}
